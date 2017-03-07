@@ -4,3 +4,10 @@ spring:
 
 server:
     port: 9090
+    jetty:
+        accesslog:
+            enabled: true
+    compression:
+        enabled: true
+        mimeTypes: text/xml, text/css, text/html, application/json
+        minResponseSize: 4096
