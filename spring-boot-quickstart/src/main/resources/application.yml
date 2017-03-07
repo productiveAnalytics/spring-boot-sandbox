@@ -3,6 +3,7 @@ spring:
         name: spring-boot-quickstart
 
 server:
+    contextPath: /springboot-greet
     port: 9090
     jetty:
         accesslog:
