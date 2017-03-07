@@ -3,4 +3,4 @@ spring:
         name: spring-boot-quickstart
 
 server:
-    port: 9000
+    port: 9090
