@@ -37,3 +37,5 @@
 *.png           binary
 *.so            binary
 *.war           binary
+
+*.rb linguist-language=Java
