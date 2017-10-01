@@ -41,9 +41,10 @@ public class BookController {
 	@Path("/{oid}")
 	public Book getBook(@PathParam("oid") String oid) {
 		Book b = bookService.getBook(oid);
-		if (b == null) 
+		if (b == null) {
+			System.err.println("Unable to find book: "+ oid);
 			throw new BookNotFoundException("Unable to find book: "+ oid);
-		else 
+		} else 
 			return b;
 	}
 /***  end of GET methods ***/
